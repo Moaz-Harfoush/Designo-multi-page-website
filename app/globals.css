@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost/Jost-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-Jost: "Jost", ui-sans-serif, system-ui;
+
+  --color-brand-peach: #e7816b;
+  --color-brand-peach-hover: #ff9680;
+  --color-brand-peach-light: #ffad9b;
+
+  --color-card-bg-warm: #fdf6f4;
+
+  --color-dark-charcoal: #1d1c1e;
+  --color-dark-grey: #333136;
+  --color-light-grey: #f1f3f5;
+}
+
+body {
+  @apply min-h-screen w-full font-Jost bg-light-grey;
+}
+
+.container {
+  @apply max-w-277.5 mx-auto px-5 md:px-10;
+}
